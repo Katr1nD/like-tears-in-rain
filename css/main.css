@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 2;
 }
 
 .title {
@@ -74,19 +75,31 @@ hr {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.fa-bold {
+.fas:hover {
     color: rgba(255, 255, 255, 1);
 }
 
 .article {
+    position: relative;
     margin: 0 auto;
     background-color: #ffffff;
     width: 810px;
     height: 450px;
     padding: 200px 125px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    /* z-index: -1; */
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.line {
+    border-left: 2px solid #cbced0;
+}
+
+.left-line {
+    position: absolute;
+    top: 0px;
+    left: 75px;
+    height: 850px;
 }
 
 .author {
